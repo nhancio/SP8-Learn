@@ -187,10 +187,6 @@ const Showcase = () => {
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <h4 className="font-poppins font-semibold text-gray-800 mb-2">React + AI Course Preview</h4>
-                <p className="text-sm text-gray-600">Watch how we integrate AI APIs into React applications</p>
-              </div>
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
               <div className="relative h-56 bg-gray-900 flex items-center justify-center">
@@ -204,10 +200,6 @@ const Showcase = () => {
                     <div className="w-0 h-0 border-l-[12px] border-l-white border-y-[8px] border-y-transparent ml-1"></div>
                   </div>
                 </div>
-              </div>
-              <div className="p-4">
-                <h4 className="font-poppins font-semibold text-gray-800 mb-2">Content Creation Masterclass</h4>
-                <p className="text-sm text-gray-600">Learn AI-powered content automation techniques</p>
               </div>
             </div>
           </div>

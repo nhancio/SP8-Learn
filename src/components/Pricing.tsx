@@ -49,12 +49,12 @@ const Pricing = () => {
           
           <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-8 text-center">
             <h3 className="text-2xl font-poppins font-bold text-white mb-4">
-              AI Content Creation Course
+              AI Video Making Course
             </h3>
             <div className="flex items-center justify-center gap-4 text-white/90">
               <div className="flex items-center gap-2">
                 <Check className="w-5 h-5" />
-                <span>AI Content Creation</span>
+                <span>AI Video Making</span>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Pricing = () => {
                     <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white flex-shrink-0">
                       {benefit.icon}
                     </div>
-                    <span className="text-gray-700 font-inter font-medium">{benefit.text}</span>
+                    <span className="text-gray-700 font-inter font-medium">{benefit.text.replace('Career', 'Earn by making videos').replace('career', 'earn by making videos').replace('AI Content Creation', 'AI Video Making')}</span>
                   </div>
                 ))}
               </div>
@@ -83,7 +83,7 @@ const Pricing = () => {
             {/* Course Highlights */}
             <div className="grid md:grid-cols-1 gap-6 mb-8">
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                <h5 className="font-poppins font-semibold text-gray-800 mb-3">AI Content Creation</h5>
+                <h5 className="font-poppins font-semibold text-gray-800 mb-3">AI Video Making</h5>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-green-500" />

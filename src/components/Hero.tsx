@@ -46,14 +46,14 @@ const Hero = () => {
       </div>
       
       <div className="text-center max-w-5xl mx-auto relative z-10">
-        {/* Logo Animation */}
+        {/* Main Heading */}
         <div className="mb-8 animate-slide-up">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6">
             <Brain className="w-10 h-10 text-purple-600 animate-float" />
           </div>
           <h1 className="text-5xl md:text-7xl font-poppins font-bold text-gray-800 mb-4 leading-tight">
-            Level Up Your Career with
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"> AI + Hands-On Skills</span>
+            Earn by Making
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"> AI Videos</span>
           </h1>
         </div>
 
@@ -62,7 +62,7 @@ const Hero = () => {
           <h2 className="text-2xl md:text-3xl font-poppins font-semibold text-gray-700 mb-8 flex items-center justify-center flex-wrap gap-4">
             <span className="flex items-center gap-2">
               <Brain className="w-6 h-6" />
-              AI Content Creation
+              AI Video Making
             </span>
           </h2>
         </div>
@@ -80,7 +80,7 @@ const Hero = () => {
             onClick={() => scrollToSection('courses')}
             className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-poppins font-semibold text-lg hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 hover:animate-wiggle"
           >
-            Enroll in AI Content Creation
+            Enroll in AI Video Making
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>

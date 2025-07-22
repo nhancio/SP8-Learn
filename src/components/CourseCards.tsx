@@ -12,7 +12,7 @@ interface Course {
 const courses: Course[] = [
   {
     id: 'content-ai',
-    title: 'Content Creation using AI',
+    title: 'AI Video Making',
     icon: <Brain className="w-8 h-8" />,
     details: [
       'Create stunning images using latest AI models',
@@ -23,7 +23,7 @@ const courses: Course[] = [
       'Expert guidance from IIT Kanpur Alumni',
       'Projects to add in your resume',
       'Live hands-on experience to build the future',
-      '  community and networking opportunity',
+      'Nhancio community and networking opportunity',
       'Potential internship and full-time opportunities'
     ]
   }
@@ -53,10 +53,10 @@ const CourseCards = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-4">
-            Transform Your Career with AI Content creation course
+            AI Video making course
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Industry-ready training with expert mentorship from IIT Kanpur alumni and hands-on project experience
+            Industry-ready training with expert mentorship from IIT Kanpur alumni and hands-on AI video creation experience
           </p>
         </div>
 

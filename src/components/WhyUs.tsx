@@ -14,7 +14,7 @@ const WhyUs = () => (
           </div>
           <h2 className="text-3xl md:text-4xl font-poppins font-bold text-gray-800 mb-2">Why Us?</h2>
           <p className="text-lg text-gray-700 font-inter">
-            Nhancio began as a passion project by a group of IITians who wanted to make AI content creation accessible to everyone. What started as a single course has now grown into a thriving team, building real-world content projects and empowering hundreds of learners to transform their careers. Our mission is to blend hands-on learning, mentorship, and the latest AI technology to help you succeed in the digital age.
+            Nhancio began as a passion project by a group of IITians who wanted to make AI video making accessible to everyone. What started as a single course has now grown into a thriving team, building real-world video projects and empowering hundreds of learners to earn by making videos. Our mission is to blend hands-on learning, mentorship, and the latest AI technology to help you succeed in the digital age.
           </p>
         </div>
       </div>
