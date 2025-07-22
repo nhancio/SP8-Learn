@@ -104,7 +104,7 @@ const Contact = () => {
                   Join hundreds of students already transforming their careers with AI skills.
                 </p>
                 <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 px-6 rounded-xl font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
-                  onClick={() => window.open('https://rzp.io/rzp/u16mpas', '_blank')}
+                  onClick={() => window.open('https://razorpay.me/@nhanciotechnologiesprivatelim?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D', '_blank')}
                 >
                   Enroll Now - ₹499
                 </button>

@@ -45,7 +45,7 @@ const CourseCards = () => {
   ];
 
   const handleEnroll = () => {
-    window.open('https://rzp.io/rzp/u16mpas', '_blank');
+    window.open('https://razorpay.me/@nhanciotechnologiesprivatelim?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D', '_blank');
   };
 
   return (
