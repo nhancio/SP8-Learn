@@ -13,15 +13,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: ' ',
-    name: '  Platform',
-    icon: <Zap className="w-6 h-6 animate-float text-purple-500" />,
-    tagline: 'AI-Powered Learning Platform',
-    description: 'Modern learning management system with integrated AI tools and real-time collaboration',
-    image: 'https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'https:// .com'
-  },
-  {
     id: 'homemates',
     name: 'Homemates AI',
     icon: <Home className="w-6 h-6 animate-bounce-gentle text-blue-500" />,
@@ -41,16 +32,23 @@ const projects: Project[] = [
   }
 ];
 
+const instagramReelIds = [
+  'DMYbu59z0Ox', // Replace with actual Reel IDs
+  'DMYY3ffzTKm',
+  'DMYLZZDTWVp',
+  'DMYJyk5ztn7',
+];
+
 const Showcase = () => {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-4">
-            Built with   + AI
+            Built with Nhancio + AI
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Real applications built by our students and instructors showcasing the power of AI integration
+            Real content creation projects built by our students and instructors using the latest AI tools
           </p>
         </div>
 
@@ -114,6 +112,25 @@ const Showcase = () => {
             <p className="text-gray-600">
               Real projects, real results from our AI-powered courses
             </p>
+          </div>
+          {/* Instagram Reels Tray */}
+          <div className="mb-12">
+            <h4 className="text-xl font-poppins font-bold text-gray-800 mb-6 text-center">Our Instagram Reels</h4>
+            <div className="flex flex-wrap justify-center gap-6">
+              {instagramReelIds.map((id, idx) => (
+                <div key={id} className="bg-white rounded-xl shadow-lg overflow-hidden w-[220px] h-[400px] flex items-center justify-center">
+                  <iframe
+                    src={`https://www.instagram.com/reel/${id}/embed`}
+                    width="220"
+                    height="400"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    title={`Instagram Reel ${idx + 1}`}
+                  ></iframe>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">

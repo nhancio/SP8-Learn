@@ -49,16 +49,12 @@ const Pricing = () => {
           
           <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-8 text-center">
             <h3 className="text-2xl font-poppins font-bold text-white mb-4">
-              Complete AI + Development Bundle
+              AI Content Creation Course
             </h3>
             <div className="flex items-center justify-center gap-4 text-white/90">
               <div className="flex items-center gap-2">
                 <Check className="w-5 h-5" />
-                <span>React + AI Course</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="w-5 h-5" />
-                <span>Content Creation Course</span>
+                <span>AI Content Creation</span>
               </div>
             </div>
           </div>
@@ -85,38 +81,21 @@ const Pricing = () => {
             </div>
 
             {/* Course Highlights */}
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="grid md:grid-cols-1 gap-6 mb-8">
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                <h5 className="font-poppins font-semibold text-gray-800 mb-3">React + AI Course</h5>
+                <h5 className="font-poppins font-semibold text-gray-800 mb-3">AI Content Creation</h5>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-green-500" />
-                    8+ Real-world projects
+                    Create stunning images using latest AI models
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-green-500" />
-                    AI API integrations
+                    Create graphical and visually pleasing videos
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-green-500" />
-                    Deployment & hosting
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                <h5 className="font-poppins font-semibold text-gray-800 mb-3">Content Creation</h5>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    AI content automation
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    Video editing workflows
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-500" />
-                    Monetization strategies
+                    Create social media automations using agents
                   </li>
                 </ul>
               </div>

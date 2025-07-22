@@ -61,13 +61,8 @@ const Hero = () => {
         <div className="animate-fade-in" style={{animationDelay: '0.3s'}}>
           <h2 className="text-2xl md:text-3xl font-poppins font-semibold text-gray-700 mb-8 flex items-center justify-center flex-wrap gap-4">
             <span className="flex items-center gap-2">
-              <Code2 className="w-6 h-6" />
-              React App Development
-            </span>
-            <span className="text-gray-400">●</span>
-            <span className="flex items-center gap-2">
               <Brain className="w-6 h-6" />
-              Content Creation
+              AI Content Creation
             </span>
           </h2>
         </div>
@@ -85,14 +80,7 @@ const Hero = () => {
             onClick={() => scrollToSection('courses')}
             className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-poppins font-semibold text-lg hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 hover:animate-wiggle"
           >
-            Enroll in React + AI
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button
-            onClick={() => scrollToSection('courses')}
-            className="group bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-8 py-4 rounded-full font-poppins font-semibold text-lg hover:from-teal-600 hover:to-cyan-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 hover:animate-wiggle"
-          >
-            Enroll in Content Creation
+            Enroll in AI Content Creation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>

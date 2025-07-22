@@ -18,20 +18,20 @@ const steps: Step[] = [
   {
     id: 2,
     icon: <BookOpen className="w-8 h-8 animate-float text-purple-500" />,
-    title: 'Learn with  ',
-    description: 'Master cutting-edge technologies through hands-on projects and AI integration.'
+    title: 'Learn with Us',
+    description: 'Master content creation using the latest AI tools and hands-on projects.'
   },
   {
     id: 3,
     icon: <Trophy className="w-8 h-8 animate-pulse-glow text-yellow-500" />,
     title: 'Showcase Skills in Public',
-    description: 'Build an impressive portfolio and establish your presence on GitHub and LinkedIn.'
+    description: 'Build an impressive portfolio and establish your presence on social media.'
   },
   {
     id: 4,
     icon: <Briefcase className="w-8 h-8 animate-wiggle text-green-500" />,
     title: 'Land Your Dream Job',
-    description: 'Get hired by top companies with confidence and a proven skill set.'
+    description: 'Get hired by top companies with confidence and a proven skill set in AI content creation.'
   }
 ];
 
