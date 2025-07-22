@@ -67,10 +67,10 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-gray-500 font-inter">Send us an email</p>
                   <a
-                    href="mailto:nithindidigam@ .com"
+                    href="mailto:nithindidigam@gmail.com"
                     className="text-lg font-poppins font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-200 break-all"
                   >
-                    nithindidigam@ .com
+                    nithindidigam@gmail.com
                   </a>
                 </div>
               </div>
