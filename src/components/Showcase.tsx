@@ -96,7 +96,7 @@ const Showcase = () => {
               Join hundreds of students who have already transformed their careers with our comprehensive AI and development courses.
             </p>
             <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              onClick={() => window.open('https://rzp.io/rzp/3DBL4CTV', '_blank')}
+              onClick={() => window.open('https://rzp.io/rzp/u16mpas', '_blank')}
             >
               Start Your Journey Today
             </button>

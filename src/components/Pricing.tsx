@@ -11,7 +11,7 @@ const Pricing = () => {
   ];
 
   const handleEnroll = () => {
-    window.open('https://rzp.io/rzp/3DBL4CTV', '_blank');
+    window.open('https://rzp.io/rzp/u16mpas', '_blank');
   };
 
   return (
