@@ -9,10 +9,13 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhyUs from './components/WhyUs';
 import { AlertTriangle } from 'lucide-react';
+import Privacy from './Privacy';
+import Terms from './Terms';
+import Support from './Support';
 
 function RegistrationCountdown() {
-  // Set your registration closing date/time here (YYYY-MM-DDTHH:MM:SSZ)
-  const deadline = new Date('2024-07-31T23:59:59Z').getTime();
+  // Set the registration closing date/time to 7 days from now
+  const [deadline] = useState(() => Date.now() + 7 * 24 * 60 * 60 * 1000);
   const [timeLeft, setTimeLeft] = useState(deadline - Date.now());
 
   useEffect(() => {

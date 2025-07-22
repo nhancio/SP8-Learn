@@ -45,7 +45,7 @@ const CourseCards = () => {
   ];
 
   const handleEnroll = () => {
-    window.open('https://rzp.io/l/ 499', '_blank'); // Replace with your actual Razorpay payment link
+    window.open('https://rzp.io/rzp/u16mpas', '_blank');
   };
 
   return (
@@ -64,7 +64,7 @@ const CourseCards = () => {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:scale-[1.02] group relative overflow-hidden"
+              className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:scale-[1.02] group relative overflow-hidden flex flex-col items-center text-center"
             >
               {/* Floating background elements */}
               <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-r from-mint/20 to-lavender/20 rounded-full blur-xl animate-float"></div>

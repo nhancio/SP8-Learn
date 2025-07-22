@@ -11,11 +11,7 @@ const Pricing = () => {
   ];
 
   const handleEnroll = () => {
-    // Scroll to contact section or handle enrollment
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.open('https://rzp.io/rzp/u16mpas', '_blank');
   };
 
   return (

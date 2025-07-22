@@ -43,7 +43,7 @@ const Contact = () => {
             <div className="absolute bottom-4 left-4 w-8 h-8 bg-gradient-to-r from-peach/20 to-mint/20 rounded-full blur-md animate-drift"></div>
             <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-8 flex items-center gap-2">
               <Rocket className="w-6 h-6 text-purple-500 animate-bounce-gentle" />
-              Ready to Transform Your Career?
+              Ready to join the next big revolution?
             </h3>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
@@ -103,7 +103,9 @@ const Contact = () => {
                 <p className="text-sm text-gray-600 mb-2">
                   Join hundreds of students already transforming their careers with AI skills.
                 </p>
-                <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 px-6 rounded-xl font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
+                <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 px-6 rounded-xl font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
+                  onClick={() => window.open('https://rzp.io/rzp/u16mpas', '_blank')}
+                >
                   Enroll Now - ₹499
                 </button>
               </div>

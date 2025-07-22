@@ -10,10 +10,10 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { label: 'Courses', id: 'courses' },
-    { label: 'Journey', id: 'journey' },
-    { label: 'Showcase', id: 'showcase' },
-    { label: 'Contact', id: 'contact' }
+    { label: 'Courses', id: 'courses', type: 'scroll' },
+    { label: 'Journey', id: '/journey', type: 'route' },
+    { label: 'Showcase', id: '/showcase', type: 'route' },
+    { label: 'Contact', id: '/contact', type: 'route' }
   ];
 
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
               <h3 className="text-2xl font-poppins font-bold"> </h3>
             </div>
             <p className="text-gray-300 font-inter leading-relaxed mb-4 text-sm">
-              Empowering the next generation of developers and creators with AI-powered education and hands-on experience.
+              Empowering the next generation of creators with AI-powered education and hands-on experience.
             </p>
             <div className="text-gray-400 text-xs">
               <p>&copy; 2025  . All rights reserved.</p>
@@ -41,13 +41,23 @@ const Footer = () => {
             <h4 className="text-base font-poppins font-semibold mb-4">Quick Links</h4>
             <nav className="space-y-2">
               {quickLinks.map((link) => (
-                <button
-                  key={link.id}
-                  onClick={() => scrollToSection(link.id)}
-                  className="block text-gray-300 hover:text-white transition-colors duration-200 font-inter text-sm"
-                >
-                  {link.label}
-                </button>
+                link.type === 'scroll' ? (
+                  <button
+                    key={link.id}
+                    onClick={() => scrollToSection(link.id)}
+                    className="block text-gray-300 hover:text-white transition-colors duration-200 font-inter text-sm"
+                  >
+                    {link.label}
+                  </button>
+                ) : (
+                  <a
+                    key={link.id}
+                    href={link.id}
+                    className="block text-gray-300 hover:text-white transition-colors duration-200 font-inter text-sm"
+                  >
+                    {link.label}
+                  </a>
+                )
               ))}
             </nav>
           </div>
@@ -73,9 +83,9 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2">
             <div className="flex items-center gap-6 text-xs text-gray-400 font-inter">
-              <a href="#" className="hover:text-white transition-colors duration-200">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors duration-200">Terms & Conditions</a>
-              <a href="#" className="hover:text-white transition-colors duration-200">Support</a>
+              <a href="/privacy" className="hover:text-white transition-colors duration-200">Privacy Policy</a>
+              <a href="/terms" className="hover:text-white transition-colors duration-200">Terms & Conditions</a>
+              <a href="/support" className="hover:text-white transition-colors duration-200">Support</a>
             </div>
           </div>
         </div>

@@ -122,7 +122,9 @@ const NewsSection = () => {
               <p className="text-lg mb-6 max-w-2xl mx-auto opacity-90">
                 Join thousands of professionals who are already future-proofing their careers with AI skills.
               </p>
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-poppins font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-poppins font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                onClick={() => window.open('https://rzp.io/rzp/u16mpas', '_blank')}
+              >
                 Start Your AI Journey Today
               </button>
             </div>
