@@ -45,7 +45,7 @@ const CourseCards = () => {
   ];
 
   const handleEnroll = () => {
-    window.open('https://pages.razorpay.com/L7plMZLU', '_blank');
+    window.open('https://rzp.io/rzp/eIltsPi', '_blank');
   };
 
   return (
@@ -126,13 +126,37 @@ const CourseCards = () => {
             </li>
             <li className="flex items-center gap-4">
               <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><BookOpen className="w-6 h-6" /></span>
-                community and networking opportunity
+              Community and networking opportunity
             </li>
             <li className="flex items-center gap-4">
               <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Rocket className="w-6 h-6" /></span>
-              Potential internship and full-time opportunities
+              Earn money and grow digitally
+            </li>
+            <li className="flex items-center gap-4">
+              <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><BookOpen className="w-6 h-6" /></span>
+              100+ prompt book
             </li>
           </ul>
+        </div>
+      </div>
+      {/* Hosts Section */}
+      <div className="max-w-3xl mx-auto mt-10">
+        <div className="bg-gradient-to-r from-mint to-lavender rounded-3xl p-8 text-gray-800 shadow-xl border border-mint-200 animate-fade-in">
+          <h3 className="text-2xl md:text-3xl font-poppins font-bold mb-6 text-center">Hosts</h3>
+          <ul className="grid md:grid-cols-2 gap-6">
+            <li className="flex flex-col items-center">
+              <span className="text-lg font-bold">Didigam Nithin</span>
+              <span className="text-sm">IIT Kanpur, AI generalist</span>
+            </li>
+            <li className="flex flex-col items-center">
+              <span className="text-lg font-bold">Abhinay Gupta</span>
+              <span className="text-sm">Business Leader, Ecom | Social Media</span>
+            </li>
+          </ul>
+          <div className="mt-6 text-center">
+            <p className="text-md font-semibold">Phone: <a href="tel:9666659359" className="text-purple-700 hover:underline">9666659359</a></p>
+            <p className="text-md font-semibold">Email: <a href="mailto:abhinay@nhancio.com" className="text-purple-700 hover:underline">abhinay@nhancio.com</a></p>
+          </div>
         </div>
       </div>
     </section>

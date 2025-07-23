@@ -57,11 +57,11 @@ function App() {
     <div className={`min-h-screen bg-light-gray font-inter transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
       <RegistrationCountdown />
       <Hero />
+      <Showcase />
       <WhyUs />
       <CourseCards />
       <JourneyTimeline />
       <NewsSection />
-      <Showcase />
       <Pricing />
       <Contact />
       <Footer />
