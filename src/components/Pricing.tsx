@@ -11,7 +11,7 @@ const Pricing = () => {
   ];
 
   const handleEnroll = () => {
-    window.open('https://razorpay.me/@nhanciotechnologiesprivatelim?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D', '_blank');
+    window.open('https://pages.razorpay.com/L7plMZLU', '_blank');
   };
 
   return (

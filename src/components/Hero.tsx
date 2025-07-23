@@ -77,7 +77,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="animate-slide-up flex flex-col sm:flex-row gap-4 justify-center" style={{animationDelay: '0.9s'}}>
           <button
-            onClick={() => window.open('https://razorpay.me/@nhanciotechnologiesprivatelim?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D', '_blank')}
+            onClick={() => window.open('https://pages.razorpay.com/L7plMZLU', '_blank')}
             className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-poppins font-semibold text-lg hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 hover:animate-wiggle"
           >
             Enroll in AI Video Making
