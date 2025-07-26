@@ -9,13 +9,6 @@ const Footer = () => {
     }
   };
 
-  const quickLinks = [
-    { label: 'Courses', id: 'courses', type: 'scroll' },
-    { label: 'Journey', id: '/journey', type: 'route' },
-    { label: 'Showcase', id: '/showcase', type: 'route' },
-    { label: 'Contact', id: '/contact', type: 'route' }
-  ];
-
   return (
     <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8 px-4">
       <div className="max-w-6xl mx-auto">
@@ -36,31 +29,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="md:col-span-1">
-            <h4 className="text-base font-poppins font-semibold mb-4">Quick Links</h4>
-            <nav className="space-y-2">
-              {quickLinks.map((link) => (
-                link.type === 'scroll' ? (
-                  <button
-                    key={link.id}
-                    onClick={() => scrollToSection(link.id)}
-                    className="block text-gray-300 hover:text-white transition-colors duration-200 font-inter text-sm"
-                  >
-                    {link.label}
-                  </button>
-                ) : (
-                  <a
-                    key={link.id}
-                    href={link.id}
-                    className="block text-gray-300 hover:text-white transition-colors duration-200 font-inter text-sm"
-                  >
-                    {link.label}
-                  </a>
-                )
-              ))}
-            </nav>
-          </div>
+          {/* Remove Quick Links section */}
 
           {/* Contact Info */}
           <div className="md:col-span-1">
@@ -70,7 +39,7 @@ const Footer = () => {
                 Ready to transform your career with AI and development skills?
               </p>
               <button
-                onClick={() => scrollToSection('courses')}
+                onClick={() => window.open('https://rzp.io/rzp/L7plMZLU', '_blank')}
                 className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm"
               >
                 Enroll Now
@@ -83,9 +52,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2">
             <div className="flex items-center gap-6 text-xs text-gray-400 font-inter">
-              <a href="/privacy" className="hover:text-white transition-colors duration-200">Privacy Policy</a>
-              <a href="/terms" className="hover:text-white transition-colors duration-200">Terms & Conditions</a>
-              <a href="/support" className="hover:text-white transition-colors duration-200">Support</a>
+              {/* Support link removed */}
             </div>
           </div>
         </div>

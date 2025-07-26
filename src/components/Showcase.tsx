@@ -32,11 +32,11 @@ const projects: Project[] = [
   }
 ];
 
-const instagramReelIds = [
-  'DMYbu59z0Ox', // Replace with actual Reel IDs
-  'DMYY3ffzTKm',
-  'DMYLZZDTWVp',
-  'DMYJyk5ztn7',
+const googleDriveVideoIds = [
+  '1-hcGC03zlTeepscMDqiIrts1l4I1KVML',
+  '1-hdYvYkJKj1q2h9yYh3mkZpB8MvLQPBs',
+  '1-h2bX5YwD_1rX3JzBR2-oEafpmXqJxZl',
+  '1-fstPK5iQjY1vdW0tRpadTDDKbEPQqwk',
 ];
 
 const Showcase = () => {
@@ -53,31 +53,21 @@ const Showcase = () => {
               Real projects, real results from our AI-powered courses
             </p>
           </div>
-          {/* Instagram Reels Tray */}
+          {/* Google Drive Videos Tray */}
           <div className="mb-12">
-            <h4 className="text-xl font-poppins font-bold text-gray-800 mb-6 text-center">Our Instagram Reels</h4>
-            <div className="flex flex-wrap justify-center gap-6">
-              {instagramReelIds.map((id, idx) => (
-                <div key={id} className="bg-white rounded-xl shadow-lg overflow-hidden w-[220px] h-[320px] flex items-center justify-center">
-                  <div className="relative w-full h-full overflow-hidden" style={{height: '320px'}}>
+            <h4 className="text-xl font-poppins font-bold text-gray-800 mb-6 text-center">Our Video Assets</h4>
+            <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {googleDriveVideoIds.map((id, idx) => (
+                <div key={id} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="relative w-full h-64">
                     <iframe
-                      src={`https://www.instagram.com/reel/${id}/embed`}
-                      width="220"
-                      height="400"
+                      src={`https://drive.google.com/file/d/${id}/preview`}
+                      width="100%"
+                      height="100%"
                       frameBorder="0"
-                      allow="autoplay; encrypted-media"
-                      allowFullScreen
-                      title={`Instagram Reel ${idx + 1}`}
-                      style={{
-                        position: 'absolute',
-                        top: '-100px', // crop more to center the video
-                        left: 0,
-                        width: '260px',
-                        height: '300px',
-                        pointerEvents: 'auto',
-                        transform: 'scale(1.5)', // zoom in
-                        transformOrigin: 'center',
-                      }}
+                      allow="autoplay"
+                      title={`Video Asset ${idx + 1}`}
+                      className="absolute inset-0 w-full h-full"
                     ></iframe>
                   </div>
                 </div>

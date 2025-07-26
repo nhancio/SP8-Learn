@@ -64,45 +64,67 @@ const CourseCards = () => {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:scale-[1.02] group relative overflow-hidden flex flex-col items-center text-center"
+              className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:scale-[1.02] group relative overflow-hidden"
             >
               {/* Floating background elements */}
               <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-r from-mint/20 to-lavender/20 rounded-full blur-xl animate-float"></div>
               <div className="absolute bottom-4 left-4 w-16 h-16 bg-gradient-to-r from-peach/20 to-mint/20 rounded-full blur-lg animate-drift"></div>
-              {/* Course Icon */}
-              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-mint to-lavender rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                {course.icon}
-              </div>
-              {/* Course Title */}
-              <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-6">
-                {course.title}
-              </h3>
-              {/* Course Details */}
-              <div className="mb-6">
-                <h4 className="font-poppins font-semibold text-gray-800 mb-3">What you'll learn:</h4>
-                <ul className="space-y-2 mb-6">
-                  {course.details.map((detail, index) => (
-                    <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {/* Tech Stack Preview */}
-              <div className="mb-6">
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium">ChatGPT</span>
-                  <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Midjourney</span>
-                  <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Canva</span>
-                  <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Adobe</span>
+              
+              {/* Two-column layout */}
+              <div className="grid md:grid-cols-2 gap-4 items-center">
+                {/* Left side - Course details */}
+                <div className="text-left flex flex-col justify-center h-full">
+                  {/* Course Icon */}
+                  <div className="flex items-center justify-start w-16 h-16 bg-gradient-to-br from-mint to-lavender rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {course.icon}
+                  </div>
+                  {/* Course Title */}
+                  <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-6">
+                    {course.title}
+                  </h3>
+                  {/* Course Details */}
+                  <div className="mb-6">
+                    <h4 className="font-poppins font-semibold text-gray-800 mb-3">What you'll learn:</h4>
+                    <ul className="space-y-2 mb-6">
+                      {course.details.map((detail, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
+                          <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {/* Tech Stack Preview */}
+                  <div className="mb-6">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium">ChatGPT</span>
+                      <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Midjourney</span>
+                      <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Canva</span>
+                      <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Adobe</span>
+                    </div>
+                  </div>
+                  {/* Action Button */}
+                  <button onClick={handleEnroll} className="w-full md:w-auto flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-glow group-hover:scale-105">
+                    <Rocket className="w-5 h-5" />
+                    Enroll Now - ₹499
+                  </button>
+                </div>
+                
+                {/* Right side - Video */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div className="relative w-full h-64">
+                    <iframe
+                      src="https://drive.google.com/file/d/1PNmxwPVhlw3azegTVePc5QkpG5AchE0-/preview"
+                      width="100%"
+                      height="100%"
+                      frameBorder="0"
+                      allow="autoplay"
+                      title="AI Video Making Course Preview"
+                      className="absolute inset-0 w-full h-full"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
-              {/* Action Button */}
-              <button onClick={handleEnroll} className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-glow group-hover:scale-105">
-                <Rocket className="w-5 h-5" />
-                Enroll Now - ₹499
-              </button>
             </div>
           ))}
         </div>
