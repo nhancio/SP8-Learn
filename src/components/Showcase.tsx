@@ -40,13 +40,12 @@ const instagramReelIds = [
 ];
 
 const driveVideoLinks = [
-  // Replace with actual public Google Drive video links (using the file IDs from the folder)
+  // Google Drive video links in embed format
   // Format: https://drive.google.com/file/d/FILE_ID/preview
-  'https://drive.google.com/file/d/1YURTFThJMujzzIidJxBG0dD_aECNUyN/preview', // Example placeholder, replace with actual video file IDs
-  'https://drive.google.com/file/d/VID-20250722-WA0012/preview',
-  'https://drive.google.com/file/d/VID-20250722-WA0013/preview',
-  'https://drive.google.com/file/d/VID-20250722-WA0014/preview',
-  'https://drive.google.com/file/d/VID-20250722-WA0016/preview',
+  'https://drive.google.com/file/d/1-fstPK5iQjY1vdW0tRpadTDDKbEPQqwk/preview',
+  'https://drive.google.com/file/d/1-hdYvYkJKj1q2h9yYh3mkZpB8MvLQPBs/preview',
+  'https://drive.google.com/file/d/1-hcGC03zlTeepscMDqiIrts1l4I1KVML/preview',
+  'https://drive.google.com/file/d/1-h2bX5YwD_1rX3JzBR2-oEafpmXqJxZl/preview',
 ];
 
 const Showcase = () => {
@@ -127,11 +126,11 @@ const Showcase = () => {
         {/* Desktop Layout */}
         <div className="hidden md:flex flex-wrap justify-center gap-8">
           {driveVideoLinks.map((link, idx) => (
-            <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden w-[320px] h-[570px] flex items-center justify-center">
+            <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden w-[480px] h-[270px] flex items-center justify-center">
               <iframe
                 src={link}
-                width="320"
-                height="570"
+                width="480"
+                height="270"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title={`Student Project Video ${idx + 1}`}
@@ -161,11 +160,11 @@ const Showcase = () => {
                   className="w-full flex-shrink-0 bg-white flex items-center justify-center"
                   style={{ minHeight: '70vh' }}
                 >
-                  <div className="w-full max-w-sm mx-auto p-4">
+                  <div className="w-full max-w-lg mx-auto p-4">
                     <iframe
                       src={link}
                       width="100%"
-                      height="500"
+                      height="200"
                       allow="autoplay; encrypted-media"
                       allowFullScreen
                       title={`Student Project Video ${idx + 1}`}

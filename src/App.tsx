@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Hero from './components/Hero';
-import CourseCards from './components/CourseCards';
-import JourneyTimeline from './components/JourneyTimeline';
-import NewsSection from './components/NewsSection';
-import Showcase from './components/Showcase';
-import Pricing from './components/Pricing';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import WhyUs from './components/WhyUs';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
+import RefundPolicy from './pages/RefundPolicy';
 import { AlertTriangle } from 'lucide-react';
 
 function RegistrationCountdown() {
@@ -51,18 +47,21 @@ function App() {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-light-gray font-inter transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
-      <RegistrationCountdown />
-      <Hero />
-      <WhyUs />
-      <CourseCards />
-      <JourneyTimeline />
-      <NewsSection />
-      <Showcase />
-      <Pricing />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className={`min-h-screen bg-light-gray font-inter transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <RegistrationCountdown />
+              <Home />
+            </>
+          } />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

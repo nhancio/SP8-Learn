@@ -51,6 +51,7 @@ const CourseCards = () => {
   return (
     <section id="courses" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
+        {/* Heading and Subheading - Full Width */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-4">
             AI Video making course
@@ -60,7 +61,8 @@ const CourseCards = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 gap-8">
+        {/* Full Width Course Card */}
+        <div className="w-full">
           {courses.map((course) => (
             <div
               key={course.id}
@@ -69,70 +71,97 @@ const CourseCards = () => {
               {/* Floating background elements */}
               <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-r from-mint/20 to-lavender/20 rounded-full blur-xl animate-float"></div>
               <div className="absolute bottom-4 left-4 w-16 h-16 bg-gradient-to-r from-peach/20 to-mint/20 rounded-full blur-lg animate-drift"></div>
-              {/* Course Icon */}
-              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-mint to-lavender rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                {course.icon}
-              </div>
-              {/* Course Title */}
-              <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-6">
-                {course.title}
-              </h3>
-              {/* Course Details */}
-              <div className="mb-6">
-                <h4 className="font-poppins font-semibold text-gray-800 mb-3">What you'll learn:</h4>
-                <ul className="space-y-2 mb-6">
-                  {course.details.map((detail, index) => (
-                    <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {/* Tech Stack Preview */}
-              <div className="mb-6">
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium">ChatGPT</span>
-                  <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Midjourney</span>
-                  <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Canva</span>
-                  <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Adobe</span>
+              
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Left Side - Course Content */}
+                <div className="flex-1">
+                  {/* Course Icon */}
+                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-mint to-lavender rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {course.icon}
+                  </div>
+                  {/* Course Title */}
+                  <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-6">
+                    {course.title}
+                  </h3>
+                  {/* Course Details */}
+                  <div className="mb-6">
+                    <h4 className="font-poppins font-semibold text-gray-800 mb-3">What you'll learn:</h4>
+                    <ul className="space-y-2 mb-6">
+                      {course.details.map((detail, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
+                          <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {/* Tech Stack Preview */}
+                  <div className="mb-6">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium">Shorts</span>
+                      <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Product Videos</span>
+                      <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Reels</span>
+                      <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Characters</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Right Side - Video Preview */}
+                <div className="flex-1">
+                  <h4 className="font-poppins font-semibold text-gray-800 mb-3">Course Preview:</h4>
+                  <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <iframe
+                      src="https://drive.google.com/file/d/1M_UuJudk307GRnNLIa3RBx7Zo-1FhlEi/preview"
+                      width="100%"
+                      height="300"
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      title="AI Video Making Course Preview"
+                      frameBorder="0"
+                      className="rounded-xl"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
-              {/* Action Button */}
-              <button onClick={handleEnroll} className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-glow group-hover:scale-105">
-                <Rocket className="w-5 h-5" />
-                Enroll Now - ₹499
-              </button>
+              
+              {/* Action Button - Full Width */}
+              <div className="mt-8">
+                <button onClick={handleEnroll} className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-poppins font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-glow group-hover:scale-105">
+                  <Rocket className="w-5 h-5" />
+                  Enroll Now - ₹499
+                </button>
+              </div>
             </div>
           ))}
         </div>
-      </div>
-      {/* What You Get Section - separate and highlighted */}
-      <div className="max-w-3xl mx-auto mt-16">
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl p-10 text-white shadow-2xl border border-purple-200 animate-fade-in">
-          <h3 className="text-2xl md:text-3xl font-poppins font-bold mb-6 text-center">What You Get</h3>
-          <ul className="grid md:grid-cols-2 gap-6">
-            <li className="flex items-center gap-4">
-              <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Rocket className="w-6 h-6" /></span>
-              Expert guidance from IIT Kanpur Alumni
-            </li>
-            <li className="flex items-center gap-4">
-              <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Users className="w-6 h-6" /></span>
-              Projects to add in your resume
-            </li>
-            <li className="flex items-center gap-4">
-              <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Sparkles className="w-6 h-6" /></span>
-              Live hands-on experience to build the future
-            </li>
-            <li className="flex items-center gap-4">
-              <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><BookOpen className="w-6 h-6" /></span>
+        
+        {/* What You Get Section - separate and highlighted */}
+        <div className="max-w-3xl mx-auto mt-16">
+          <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl p-10 text-white shadow-2xl border border-purple-200 animate-fade-in">
+            <h3 className="text-2xl md:text-3xl font-poppins font-bold mb-6 text-center">What You Get</h3>
+            <ul className="grid md:grid-cols-2 gap-6">
+              <li className="flex items-center gap-4">
+                <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Rocket className="w-6 h-6" /></span>
+                Expert guidance from IIT Kanpur Alumni
+              </li>
+              <li className="flex items-center gap-4">
+                <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Users className="w-6 h-6" /></span>
+                Projects to add in your resume
+              </li>
+              <li className="flex items-center gap-4">
+                <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Sparkles className="w-6 h-6" /></span>
+                Live hands-on experience to build the future
+              </li>
+              <li className="flex items-center gap-4">
+                <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><BookOpen className="w-6 h-6" /></span>
                 community and networking opportunity
-            </li>
-            <li className="flex items-center gap-4">
-              <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Rocket className="w-6 h-6" /></span>
-              Potential internship and full-time opportunities
-            </li>
-          </ul>
+              </li>
+              <li className="flex items-center gap-4">
+                <span className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center"><Rocket className="w-6 h-6" /></span>
+                Potential internship and full-time opportunities
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
