@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
             </div>
             <h1 className="text-3xl font-poppins font-bold text-gray-800">Privacy Policy</h1>
           </div>
-          <p className="text-gray-600 mt-2">Last updated: January 2025</p>
+          <p className="text-gray-600 mt-2">Last Updated: 7/08/2025</p>
         </div>
       </div>
 
@@ -32,128 +32,128 @@ const PrivacyPolicy = () => {
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
           
-          {/* Introduction */}
+          {/* Overview */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Introduction</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">1. Overview</h2>
             <p className="text-gray-600 leading-relaxed">
-              At Nhancio, we are committed to protecting your privacy and ensuring the security of your personal information. 
-              This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our 
-              AI Video Making course and related services.
+              We collect only the information necessary to provide and process your purchases (e.g. name, email, payment data). 
+              Payments are processed via Razorpay; sensitive data like card details are handled by Razorpay and not stored by us. 
+              Razorpay adheres to industry‑standard data protection and applicable Indian laws.
             </p>
           </div>
 
-          {/* Information We Collect */}
+          {/* What We Collect */}
           <div className="mb-8">
             <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
               <Eye className="w-6 h-6 text-purple-500" />
-              Information We Collect
+              2. What We Collect
             </h2>
             <div className="space-y-4">
               <div>
                 <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Personal Information</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
-                  <li>Name and contact information (email, phone number)</li>
-                  <li>Payment and billing information</li>
-                  <li>Educational background and experience</li>
-                  <li>Course progress and completion data</li>
+                  <li>Name, email, transaction history</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Technical Information</h3>
+                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Usage Data</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
-                  <li>IP address and device information</li>
-                  <li>Browser type and version</li>
-                  <li>Usage data and analytics</li>
-                  <li>Cookies and similar technologies</li>
+                  <li>IP address, browser, timestamps for site operation/security</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Third-Party Services</h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                  <li>Razorpay (payment processing)</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* How We Use Information */}
+          {/* Purpose of Use */}
           <div className="mb-8">
             <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
               <Users className="w-6 h-6 text-purple-500" />
-              How We Use Your Information
+              3. Purpose of Use
             </h2>
-            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-              <li>Provide and maintain our educational services</li>
-              <li>Process payments and manage subscriptions</li>
-              <li>Send important course updates and notifications</li>
-              <li>Improve our course content and user experience</li>
-              <li>Provide customer support and technical assistance</li>
-              <li>Comply with legal obligations and regulations</li>
-            </ul>
-          </div>
-
-          {/* Information Sharing */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Information Sharing</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, 
-              except in the following circumstances:
+              To enable course purchase, delivery, customer support, fraud prevention, and occasional updates or offers via opt‑in communication.
             </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-              <li>With your explicit consent</li>
-              <li>To comply with legal requirements</li>
-              <li>To protect our rights and safety</li>
-              <li>With trusted service providers who assist in our operations</li>
-            </ul>
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+              <p className="text-blue-800 font-semibold">Third-Party Services:</p>
+              <ul className="list-disc list-inside text-blue-700 space-y-1 ml-4 mt-2">
+                <li>Razorpay (payment processing)</li>
+              </ul>
+            </div>
           </div>
 
-          {/* Data Security */}
+          {/* Data Retention & Erasure */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <Lock className="w-6 h-6 text-purple-500" />
-              Data Security
-            </h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">4. Data Retention & Erasure</h2>
             <p className="text-gray-600 leading-relaxed">
-              We implement appropriate technical and organizational security measures to protect your personal information 
-              against unauthorized access, alteration, disclosure, or destruction. These measures include encryption, 
-              secure servers, and regular security assessments.
+              We retain user data only as long as needed to fulfill transactions and regulatory obligations. On request, 
+              data can be erased upon account closure.
             </p>
           </div>
 
-          {/* Your Rights */}
+          {/* Disclosure to Third Parties */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Your Rights</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">5. Disclosure to Third Parties</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              You have the following rights regarding your personal information:
+              We share personal data only with Razorpay (for payment processing) and with compliance-required parties. 
+              We do not sell or make your data public.
             </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-              <li>Access and review your personal data</li>
-              <li>Request correction of inaccurate information</li>
-              <li>Request deletion of your personal data</li>
-              <li>Object to processing of your data</li>
-              <li>Withdraw consent at any time</li>
-              <li>Request data portability</li>
-            </ul>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+              <p className="text-yellow-800 font-semibold">Third-Party Services:</p>
+              <ul className="list-disc list-inside text-yellow-700 space-y-1 ml-4 mt-2">
+                <li>Razorpay (payment processing)</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Cookies & Tracking */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">6. Cookies & Tracking</h2>
+            <p className="text-gray-600 leading-relaxed">
+              We use essential cookies for site functionality and analytics. No tracking of sensitive personal data.
+            </p>
+          </div>
+
+          {/* Policy Updates */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">7. Policy Updates</h2>
+            <p className="text-gray-600 leading-relaxed">
+              We may update this Policy; changes will be effective immediately. Continued use implies consent.
+            </p>
+          </div>
+
+          {/* Jurisdiction */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">8. Jurisdiction</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Indian law applies; disputes subject to courts in Bengaluru, India.
+            </p>
+            <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+              <p className="text-green-800 font-semibold">Third-Party Services:</p>
+              <ul className="list-disc list-inside text-green-700 space-y-1 ml-4 mt-2">
+                <li>Razorpay (payment processing)</li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact Information */}
-          <div className="mb-8">
+          <div className="border-t border-gray-200 pt-8">
             <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Contact Us</h2>
             <p className="text-gray-600 leading-relaxed">
               If you have any questions about this Privacy Policy or our data practices, please contact us at:
             </p>
             <div className="mt-4 p-4 bg-gray-50 rounded-xl">
               <p className="text-gray-800 font-semibold">Email:</p>
-              <p className="text-gray-600">privacy@nhancio.com</p>
+              <p className="text-gray-600">hello@nhancio.com</p>
               <p className="text-gray-800 font-semibold mt-2">Address:</p>
-              <p className="text-gray-600">Nhancio Education Pvt Ltd<br />
-              [Your Business Address]<br />
-              India</p>
+              <p className="text-gray-600">Nhancio Technologies Pvt Ltd<br />
+              Bengaluru, India</p>
             </div>
-          </div>
-
-          {/* Updates */}
-          <div className="border-t border-gray-200 pt-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Updates to This Policy</h2>
-            <p className="text-gray-600 leading-relaxed">
-              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the 
-              new Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this 
-              Privacy Policy periodically for any changes.
-            </p>
           </div>
         </div>
       </div>

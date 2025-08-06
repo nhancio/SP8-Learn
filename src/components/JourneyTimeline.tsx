@@ -73,7 +73,7 @@ const JourneyTimeline = () => {
   }, []);
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-mint/20 via-peach/20 to-lavender/20">
+    <section id="journey" className="py-20 px-4 bg-gradient-to-br from-mint/20 via-peach/20 to-lavender/20">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-4">

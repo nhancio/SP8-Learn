@@ -24,7 +24,7 @@ const TermsConditions = () => {
             </div>
             <h1 className="text-3xl font-poppins font-bold text-gray-800">Terms & Conditions</h1>
           </div>
-          <p className="text-gray-600 mt-2">Last updated: January 2025</p>
+          <p className="text-gray-600 mt-2">Effective Date: 7/08/2025</p>
         </div>
       </div>
 
@@ -32,172 +32,84 @@ const TermsConditions = () => {
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
           
-          {/* Introduction */}
+          {/* Acceptance */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Introduction</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">1. Acceptance</h2>
             <p className="text-gray-600 leading-relaxed">
-              These Terms and Conditions govern your use of Nhancio's AI Video Making course and related services. 
-              By accessing or using our services, you agree to be bound by these terms. If you disagree with any 
-              part of these terms, you may not access our services.
+              By using this site and making a purchase, you agree to these Terms and our Privacy Policy.
             </p>
           </div>
 
-          {/* Acceptance of Terms */}
+          {/* Services & Payment */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <CheckCircle className="w-6 h-6 text-purple-500" />
-              Acceptance of Terms
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              By enrolling in our AI Video Making course, you acknowledge that you have read, understood, and agree 
-              to be bound by these Terms and Conditions. These terms apply to all users of our services, including 
-              students, instructors, and visitors.
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">2. Services & Payment</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              We sell access to video-based learning courses. Payments are processed via Razorpay's platform. 
+              Usage of Razorpay is governed by their Terms & Conditions.
             </p>
-          </div>
-
-          {/* Course Access and Usage */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Course Access and Usage</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">License</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  We grant you a limited, non-exclusive, non-transferable license to access and use our course 
-                  materials for personal, non-commercial educational purposes only.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Restrictions</h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
-                  <li>You may not share, distribute, or resell course materials</li>
-                  <li>You may not reverse engineer or attempt to extract source code</li>
-                  <li>You may not use our services for any illegal or unauthorized purpose</li>
-                  <li>You may not interfere with or disrupt our services</li>
-                </ul>
-              </div>
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+              <p className="text-blue-800 font-semibold">Third-Party Services:</p>
+              <ul className="list-disc list-inside text-blue-700 space-y-1 ml-4 mt-2">
+                <li>Razorpay (payment processing)</li>
+              </ul>
             </div>
           </div>
 
-          {/* Payment Terms */}
+          {/* User Obligations */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Payment Terms</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Course Fees</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Course fees are payable in advance. All prices are in Indian Rupees (₹) and are subject to 
-                  applicable taxes. Payment is processed securely through our payment partners.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Refund Policy</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Please refer to our separate Refund Policy for detailed information about refund eligibility 
-                  and procedures.
-                </p>
-              </div>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <AlertCircle className="w-6 h-6 text-purple-500" />
+              3. User Obligations
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              You must provide accurate information. You agree not to use the service unlawfully or infringe 
+              intellectual property rights. Violating activity may result in suspension or termination without liability.
+            </p>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+              <p className="text-yellow-800 font-semibold">Third-Party Services:</p>
+              <ul className="list-disc list-inside text-yellow-700 space-y-1 ml-4 mt-2">
+                <li>Razorpay (payment processing)</li>
+              </ul>
             </div>
           </div>
 
           {/* Intellectual Property */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Intellectual Property</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              All content, materials, and intellectual property in our courses are owned by Nhancio or our 
-              licensors and are protected by copyright, trademark, and other intellectual property laws.
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">4. Intellectual Property</h2>
+            <p className="text-gray-600 leading-relaxed">
+              All course content and site design are our intellectual property. You receive a limited license 
+              to access content for personal use only. Any unauthorized redistribution is prohibited.
             </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-              <li>Course materials are for personal use only</li>
-              <li>You may not reproduce, distribute, or create derivative works</li>
-              <li>Your own projects created during the course remain your property</li>
-              <li>We may use anonymized student work for promotional purposes</li>
-            </ul>
           </div>
 
-          {/* User Conduct */}
+          {/* Liability Limitation */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <AlertCircle className="w-6 h-6 text-purple-500" />
-              User Conduct
-            </h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">5. Liability Limitation</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              You agree to use our services in a manner that is lawful, respectful, and appropriate. 
-              Prohibited activities include:
+              Our liability—whether in contract, tort, or otherwise—will not exceed the amount you paid for the course. 
+              We disclaim indirect, incidental, or consequential damages.
             </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-              <li>Harassment or discrimination of other users</li>
-              <li>Sharing inappropriate or offensive content</li>
-              <li>Attempting to gain unauthorized access to our systems</li>
-              <li>Violating any applicable laws or regulations</li>
-              <li>Interfering with the learning experience of others</li>
-            </ul>
-          </div>
-
-          {/* Disclaimers */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Disclaimers</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Educational Content</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  While we strive to provide accurate and up-to-date information, we make no guarantees about 
-                  the completeness, accuracy, or reliability of our course content. The information is provided 
-                  "as is" for educational purposes only.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Career Outcomes</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  We cannot guarantee specific career outcomes, job placements, or salary increases. Success 
-                  depends on individual effort, market conditions, and other factors beyond our control.
-                </p>
-              </div>
+            <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+              <p className="text-green-800 font-semibold">Third-Party Services:</p>
+              <ul className="list-disc list-inside text-green-700 space-y-1 ml-4 mt-2">
+                <li>Razorpay (payment processing)</li>
+              </ul>
             </div>
           </div>
 
-          {/* Limitation of Liability */}
+          {/* Modifications to Terms */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Limitation of Liability</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">6. Modifications to Terms</h2>
             <p className="text-gray-600 leading-relaxed">
-              To the maximum extent permitted by law, Nhancio shall not be liable for any indirect, incidental, 
-              special, consequential, or punitive damages, including but not limited to loss of profits, data, 
-              or use, arising out of or relating to your use of our services.
-            </p>
-          </div>
-
-          {/* Termination */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <Clock className="w-6 h-6 text-purple-500" />
-              Termination
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              We may terminate or suspend your access to our services at any time, with or without cause, 
-              with or without notice. Upon termination, your right to use our services will cease immediately.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              You may terminate your account at any time by contacting our support team. Upon termination, 
-              certain provisions of these terms will continue to apply.
-            </p>
-          </div>
-
-          {/* Changes to Terms */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Changes to Terms</h2>
-            <p className="text-gray-600 leading-relaxed">
-              We reserve the right to modify these Terms and Conditions at any time. We will notify users 
-              of any material changes by posting the new terms on our website. Your continued use of our 
-              services after such changes constitutes acceptance of the new terms.
+              We may change these Terms at any time by updating this page. Continued use constitutes acceptance.
             </p>
           </div>
 
           {/* Governing Law */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Governing Law</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">7. Governing Law</h2>
             <p className="text-gray-600 leading-relaxed">
-              These Terms and Conditions shall be governed by and construed in accordance with the laws of India. 
-              Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts 
-              in [Your City], India.
+              Indian law governs these Terms. Disputes to be resolved by Hyderabad courts.
             </p>
           </div>
 
@@ -209,11 +121,10 @@ const TermsConditions = () => {
             </p>
             <div className="mt-4 p-4 bg-gray-50 rounded-xl">
               <p className="text-gray-800 font-semibold">Email:</p>
-              <p className="text-gray-600">legal@nhancio.com</p>
+              <p className="text-gray-600">hello@nhancio.com</p>
               <p className="text-gray-800 font-semibold mt-2">Address:</p>
-              <p className="text-gray-600">Nhancio Education Pvt Ltd<br />
-              [Your Business Address]<br />
-              India</p>
+              <p className="text-gray-600">Nhancio Technologies Pvt Ltd<br />
+              Hyderabad, India</p>
             </div>
           </div>
         </div>

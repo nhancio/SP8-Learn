@@ -24,7 +24,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-mint/30 via-peach/30 to-lavender/30">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-mint/30 via-peach/30 to-lavender/30">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-gray-800 mb-4">

@@ -111,7 +111,7 @@ const Showcase = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="showcase" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Google Drive Videos Section */}
         <div className="text-center mb-16 animate-fade-in">

@@ -76,7 +76,7 @@ const Footer = () => {
               <a href="/privacy-policy" className="hover:text-white transition-colors duration-200">Privacy Policy</a>
               <a href="/terms-conditions" className="hover:text-white transition-colors duration-200">Terms & Conditions</a>
               <a href="/refund-policy" className="hover:text-white transition-colors duration-200">Refund Policy</a>
-              <a href="#" className="hover:text-white transition-colors duration-200">Support</a>
+              <a href="mailto:nithindidigam@gmail.com" className="hover:text-white transition-colors duration-200">Support</a>
             </div>
           </div>
         </div>
