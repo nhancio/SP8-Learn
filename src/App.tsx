@@ -4,6 +4,7 @@ import Home from './components/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import RefundPolicy from './pages/RefundPolicy';
+import FacebookPixel from './components/FacebookPixel';
 import { AlertTriangle } from 'lucide-react';
 
 function RegistrationCountdown() {
@@ -49,6 +50,7 @@ function App() {
   return (
     <Router>
       <div className={`min-h-screen bg-light-gray font-inter transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+        <FacebookPixel pixelId="519067613073189" />
         <Routes>
           <Route path="/" element={
             <>

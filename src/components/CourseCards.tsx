@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Code2, Brain, Lightbulb, Rocket, Users, Award, Briefcase, Network, ChevronDown, ChevronUp, Sparkles, BookOpen } from 'lucide-react';
+import { trackInitiateCheckout } from './FacebookPixel';
 
 interface Course {
   id: string;
@@ -45,6 +46,8 @@ const CourseCards = () => {
   ];
 
   const handleEnroll = () => {
+    // Track the checkout initiation event
+    trackInitiateCheckout(499, 'INR');
     window.open('https://rzp.io/l/ 499', '_blank'); // Replace with your actual Razorpay payment link
   };
 
