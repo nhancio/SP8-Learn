@@ -60,6 +60,7 @@ const RefundPolicy = () => {
               <div className="bg-red-50 border border-red-200 rounded-xl p-6">
                 <h3 className="text-lg font-poppins font-semibold text-red-800 mb-2">❌ Not Eligible</h3>
                 <p className="text-red-700 leading-relaxed">
+                  In case of any refunds approved by NHANCIO TECHNOLOGIES PRIVATE LIMITED, it will take 7 days for the refund to be Credited  to you.
                   Refunds not applicable for digital content already consumed.
                 </p>
               </div>

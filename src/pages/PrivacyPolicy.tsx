@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Shield, Eye, Lock, Users } from 'lucide-react';
+import { ArrowLeft, Shield } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   const goBack = () => {
@@ -31,114 +31,178 @@ const PrivacyPolicy = () => {
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
-          
-          {/* Overview */}
+          {/* Introduction */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">1. Overview</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Introduction</h2>
             <p className="text-gray-600 leading-relaxed">
-              We collect only the information necessary to provide and process your purchases (e.g. name, email, payment data). 
-              Payments are processed via Razorpay; sensitive data like card details are handled by Razorpay and not stored by us. 
-              Razorpay adheres to industry‑standard data protection and applicable Indian laws.
+              This Privacy Policy describes how NHANCIO TECHNOLOGIES PRIVATE LIMITED and its affiliates (collectively
+              "NHANCIO TECHNOLOGIES PRIVATE LIMITED, we, our, us") collect, use, share, protect or otherwise process your
+              information/personal data through our website
+              <a href="https://learn.nhancio.com" className="text-purple-600 hover:underline"> https://learn.nhancio.com</a>
+              (hereinafter referred to as "Platform"). Please note that you may be able to browse certain sections of the
+              Platform without registering with us. We do not offer any product/service under this Platform outside India and
+              your personal data will primarily be stored and processed in India. By visiting this Platform, providing your
+              information or availing any product/service offered on the Platform, you expressly agree to be bound by the
+              terms and conditions of this Privacy Policy, the Terms of Use and the applicable service/product terms and
+              conditions, and agree to be governed by the laws of India including but not limited to the laws applicable to
+              data protection and privacy. If you do not agree please do not use or access our Platform.
             </p>
           </div>
 
-          {/* What We Collect */}
+          {/* Collection */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <Eye className="w-6 h-6 text-purple-500" />
-              2. What We Collect
-            </h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Personal Information</h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
-                  <li>Name, email, transaction history</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Usage Data</h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
-                  <li>IP address, browser, timestamps for site operation/security</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-poppins font-semibold text-gray-800 mb-2">Third-Party Services</h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-1 ml-4">
-                  <li>Razorpay (payment processing)</li>
-                </ul>
-              </div>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Collection</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              We collect your personal data when you use our Platform, services or otherwise interact with us during the
+              course of our relationship and related information provided from time to time. Some of the information that we
+              may collect includes but is not limited to personal data/information provided to us during sign-up/registering
+              or using our Platform such as name, date of birth, address, telephone/mobile number, email ID and/or any such
+              information shared as proof of identity or address.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              Some of the sensitive personal data may be collected with your consent, such as your bank account or credit or
+              debit card or other payment instrument information or biometric information such as your facial features or
+              physiological information (in order to enable use of certain features when opted for, available on the Platform)
+              etc., all of the above being in accordance with applicable law(s). You always have the option to not provide
+              information, by choosing not to use a particular service or feature on the Platform.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              We may track your behaviour, preferences, and other information that you choose to provide on our Platform.
+              This information is compiled and analysed on an aggregated basis. We will also collect your information
+              related to your transactions on the Platform and such third-party business partner platforms. When such a
+              third-party business partner collects your personal data directly from you, you will be governed by their
+              privacy policies. We shall not be responsible for the third-party business partner’s privacy practices or the
+              content of their privacy policies, and we request you to read their privacy policies prior to disclosing any
+              information.
+            </p>
+            <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-xl">
+              <p className="text-yellow-800">
+                If you receive an email or a call from a person/association claiming to be NHANCIO TECHNOLOGIES PRIVATE
+                LIMITED seeking any personal data like debit/credit card PIN, net-banking or mobile banking password, do not
+                provide such information. If you have already revealed such information, report it immediately to an
+                appropriate law enforcement agency.
+              </p>
             </div>
           </div>
 
-          {/* Purpose of Use */}
+          {/* Usage */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <Users className="w-6 h-6 text-purple-500" />
-              3. Purpose of Use
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              To enable course purchase, delivery, customer support, fraud prevention, and occasional updates or offers via opt‑in communication.
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Usage</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              We use personal data to provide the services you request. To the extent we use your personal data to market to
+              you, we will provide you the ability to opt-out of such uses.
             </p>
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-              <p className="text-blue-800 font-semibold">Third-Party Services:</p>
-              <ul className="list-disc list-inside text-blue-700 space-y-1 ml-4 mt-2">
-                <li>Razorpay (payment processing)</li>
-              </ul>
-            </div>
+            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
+              <li>Assist sellers and business partners in handling and fulfilling orders</li>
+              <li>Enhance customer experience and resolve disputes</li>
+              <li>Troubleshoot problems and inform you about offers, products, services, and updates</li>
+              <li>Customise your experience and detect, prevent and protect against fraud and other criminal activity</li>
+              <li>Enforce our terms and conditions, conduct research/analysis/surveys</li>
+              <li>As otherwise described to you at the time of collection of information</li>
+            </ul>
+            <p className="text-gray-600 leading-relaxed mt-3">
+              You understand that your access to these products/services may be affected in the event permission is not
+              provided to us.
+            </p>
           </div>
 
-          {/* Data Retention & Erasure */}
+          {/* Sharing */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">4. Data Retention & Erasure</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Sharing</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              We may share your personal data internally within our group entities, our other corporate entities, and
+              affiliates to provide you access to the services and products offered by them. These entities and affiliates
+              may market to you as a result of such sharing unless you explicitly opt-out.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              We may disclose personal data to third parties such as sellers, business partners, third party service
+              providers including logistics partners, prepaid payment instrument issuers, third-party reward programs and
+              other payment methods opted by you. These disclosures may be required for us to provide you access to our
+              services and products offered to you, to comply with our legal obligations, to enforce our user agreement, to
+              facilitate our marketing and advertising activities, and to prevent, detect, mitigate, and investigate
+              fraudulent or illegal activities related to our services.
+            </p>
             <p className="text-gray-600 leading-relaxed">
-              We retain user data only as long as needed to fulfill transactions and regulatory obligations. On request, 
-              data can be erased upon account closure.
+              We may disclose personal and sensitive personal data to government agencies or other authorised law enforcement
+              agencies if required to do so by law or in the good faith belief that such disclosure is reasonably necessary
+              to respond to subpoenas, court orders, or other legal process; or to protect the rights, property or personal
+              safety of our users or the general public.
             </p>
           </div>
 
-          {/* Disclosure to Third Parties */}
+          {/* Security Precautions */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">5. Disclosure to Third Parties</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              We share personal data only with Razorpay (for payment processing) and with compliance-required parties. 
-              We do not sell or make your data public.
-            </p>
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-              <p className="text-yellow-800 font-semibold">Third-Party Services:</p>
-              <ul className="list-disc list-inside text-yellow-700 space-y-1 ml-4 mt-2">
-                <li>Razorpay (payment processing)</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Cookies & Tracking */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">6. Cookies & Tracking</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Security Precautions</h2>
             <p className="text-gray-600 leading-relaxed">
-              We use essential cookies for site functionality and analytics. No tracking of sensitive personal data.
+              To protect your personal data from unauthorised access or disclosure, loss or misuse we adopt reasonable
+              security practices and procedures. Once your information is in our possession or whenever you access your
+              account information, we adhere to our security guidelines to protect it against unauthorised access and offer
+              the use of a secure server. However, transmission of information over the internet is not completely secure
+              and there are risks beyond our control. By using the Platform, you accept these security implications and are
+              responsible for protecting your login and password records for your account.
             </p>
           </div>
 
-          {/* Policy Updates */}
+          {/* Data Deletion and Retention */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">7. Policy Updates</h2>
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Data Deletion and Retention</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              You have an option to delete your account by visiting your profile and settings on our Platform. This action
+              would result in you losing all information related to your account. You may also write to us at the contact
+              information provided below to assist you with these requests. In the event of any pending grievance, claims,
+              pending shipments or any other services we may refuse or delay deletion of the account.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              Once the account is deleted, you will lose access to the account. We retain your personal data information for
+              a period no longer than is required for the purpose for which it was collected or as required under any
+              applicable law. However, we may retain data related to you if we believe it may be necessary to prevent fraud
+              or future abuse or for other legitimate purposes. We may continue to retain your data in anonymised form for
+              analytical and research purposes.
+            </p>
+          </div>
+
+          {/* Your Rights */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Your Rights</h2>
             <p className="text-gray-600 leading-relaxed">
-              We may update this Policy; changes will be effective immediately. Continued use implies consent.
+              You may access, rectify, and update your personal data directly through the functionalities provided on the
+              Platform.
             </p>
           </div>
 
-          {/* Jurisdiction */}
+          {/* Consent */}
           <div className="mb-8">
-            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">8. Jurisdiction</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Indian law applies; disputes subject to courts in Bengaluru, India.
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Consent</h2>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              By visiting our Platform or by providing your information, you consent to the collection, use, storage,
+              disclosure and otherwise processing of your information on the Platform in accordance with this Privacy Policy.
+              If you disclose to us any personal data relating to other people, you represent that you have the authority to
+              do so and permit us to use the information in accordance with this Privacy Policy.
             </p>
-            <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-              <p className="text-green-800 font-semibold">Third-Party Services:</p>
-              <ul className="list-disc list-inside text-green-700 space-y-1 ml-4 mt-2">
-                <li>Razorpay (payment processing)</li>
-              </ul>
-            </div>
+            <p className="text-gray-600 leading-relaxed mb-3">
+              You, while providing your personal data over the Platform or any partner platforms or establishments, consent
+              to us (including our other corporate entities, affiliates, lending partners, technology partners, marketing
+              channels, business partners and other third parties) to contact you through SMS, instant messaging apps, call
+              and/or e-mail for the purposes specified in this Privacy Policy.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              You have an option to withdraw your consent that you have already provided by writing to the Grievance Officer
+              at the contact information provided below with the subject line "Withdrawal of consent for processing personal
+              data". We may verify such requests before acting on them. Please note that withdrawal of consent will not be
+              retrospective and will be in accordance with the Terms of Use, this Privacy Policy, and applicable laws. In the
+              event you withdraw consent given to us under this Privacy Policy, we reserve the right to restrict or deny the
+              provision of our services for which we consider such information to be necessary.
+            </p>
+          </div>
+
+          {/* Changes to this Privacy Policy */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Changes to this Privacy Policy</h2>
+            <p className="text-gray-600 leading-relaxed">
+              Please check our Privacy Policy periodically for changes. We may update this Privacy Policy to reflect changes
+              to our information practices. We may alert/notify you about the significant changes to the Privacy Policy, in
+              the manner as may be required under applicable laws.
+            </p>
           </div>
 
           {/* Contact Information */}
@@ -151,7 +215,7 @@ const PrivacyPolicy = () => {
               <p className="text-gray-800 font-semibold">Email:</p>
               <p className="text-gray-600">hello@nhancio.com</p>
               <p className="text-gray-800 font-semibold mt-2">Address:</p>
-              <p className="text-gray-600">Nhancio Technologies Pvt Ltd<br />
+              <p className="text-gray-600">NHANCIO TECHNOLOGIES PRIVATE LIMITED<br />
               Bengaluru, India</p>
             </div>
           </div>
